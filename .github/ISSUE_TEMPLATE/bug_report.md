@@ -1,38 +1,48 @@
----
 name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+description: Report build and runtime bugs
+labels: ["Type: Bug"]
+body:
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Answers checklist.
+      description: Before submitting a new issue, please follow the checklist and try to find the answer.
+      options:
+        - label: I have read the component documentation [ESP-IDF Components](https://components.espressif.com) and the issue is not addressed there.
+          required: true
+        - label: I am using target and esp-idf version as defined in component's idf_component.yml
+          required: true
+        - label: I have searched the [issue tracker](https://github.com/espressif/esp-usb/issues?q=is%3Aissue) for a similar issue and not found any related issue.
+          required: true
+  - type: input
+    id: idf_version
+    attributes:
+      label: ESP-IDF version.
+      description: On which ESP-IDF version does this issue occur on? Run `git describe --tags` in your esp-idf folder to find it.
+      placeholder: ex. v5.0-rc1
+    validations:
+      required: true
+  - type: input
+    id: devkit
+    attributes:
+      label: Development Kit.
+      description: On which Development Kit does this issue occur on?
+      placeholder: ex. ESP32-Wrover-Kit v2 | Custom Board
+    validations:
+      required: true
+  - type: input
+    id: component_version
+    attributes:
+      label: Used Component version.
+      description: On which Component version does this issue occur on? Check `dependencies.lock` file in your project root to find it.
+      placeholder: ex. v1.2.0-rc0
+    validations:
+      required: true
+  - type: textarea
+    id: more-info
+    attributes:
+      label: More Information.
+      description: Do you have any other information from investigating this?
+      placeholder: ex. I tried on my friend's Windows 10 PC and the command works there.
+    validations:
+      required: false
