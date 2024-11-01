@@ -8,5 +8,5 @@ Everyone should have something like this, right?
 2. Edited README.md
 3. Set up the .github folder
 4. Set up ISSUE TEMPLATES
-
+5. Set up PULL REQUEST template
 
