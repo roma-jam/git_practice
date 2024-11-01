@@ -7,5 +7,6 @@ Everyone should have something like this, right?
 1. Created a personal repo to practice
 2. Edited README.md
 3. Set up the .github folder
+4. Set up ISSUE TEMPLATES
 
 

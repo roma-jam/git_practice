@@ -1,14 +1,10 @@
----
-name: Pull Request
-about: 'Describe the changes and provide additional information '
-title: ''
-labels: ''
-assignees: roma-jam
+# Changes description
+_Please describe your changes here using list format_
 
----
+# Description
+_Please describe your changes in a more detailed way_
 
-## Changes
-_Please, describe the changes using the list_
+# Checklist
 
-## Description
-_Provide a description of the changes in the PR_
+- [ ] _Optional:_ README.md updated
+- [ ] CI passing
