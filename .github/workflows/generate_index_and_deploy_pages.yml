@@ -1,9 +1,9 @@
 name: Generate Index and Deploy Pages
 
 on:
-  push:
-    branches:
-      - master  
+    push:
+        branches:
+            - '**'
 
 jobs:
   build-and-deploy:
