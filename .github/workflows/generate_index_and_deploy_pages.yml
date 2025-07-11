@@ -33,8 +33,8 @@ jobs:
         run: |
           mkdir -p docs
           echo "<!DOCTYPE html>" > docs/index.html
-          echo "<html><head><meta charset='utf-8'><title>USBCV Reports</title></head><body>" >> docs/index.html
-          echo "<h1>Available reports</h1><ul>" >> docs/index.html
+          echo "<html><head><meta charset='utf-8'><title>ESP TinyUSB USB Compliance Verification</title></head><body>" >> docs/index.html
+          echo "<h1>USBCV Tool reports</h1><ul>" >> docs/index.html
 
           find docs -type f -name '*.html' ! -name 'index.html' | sort | while read filepath; do
             filename=$(basename "$filepath")
