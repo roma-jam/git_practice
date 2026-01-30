@@ -9,4 +9,5 @@ Everyone should have something like this, right?
 3. Set up the .github folder
 4. Set up ISSUE TEMPLATES
 5. Set up PULL REQUEST template
+6. Created a folder for refresh C data structures
 
