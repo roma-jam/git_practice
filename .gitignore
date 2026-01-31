@@ -58,3 +58,34 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# ---- Sphinx ----
+docs/_build/
+docs/build/
+docs/source/_build/
+docs/source/generated/
+docs/source/_autosummary/
+
+# If you use sphinx-apidoc and generate .rst files into a folder
+docs/source/api/
+
+# Sphinx extensions that may generate caches
+docs/.doctrees/
+docs/source/.doctrees/
+
+# ---- Python ----
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Packaging / tooling caches (safe defaults)
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# ---- OS / editor ----
+.DS_Store
+.vscode/
+.idea/
