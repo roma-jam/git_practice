@@ -34,7 +34,7 @@ jobs:
 
       - name: Build Sphinx HTML
         run: |
-          make html
+          make -C docs html
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
